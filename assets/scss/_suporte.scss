@@ -1,0 +1,15 @@
+img{
+    max-height :$imgmaxheigth;
+}
+.blink_me {
+    animation: blinker $blinkseconds linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: $zeroopacity;
+    }
+  }
+.greencolor{
+    color: $color;
+}
