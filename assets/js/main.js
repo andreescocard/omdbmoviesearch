@@ -10,7 +10,7 @@ function searchMovie(){
         if(isimdb){
             
             $.ajax({
-                url: "http://www.omdbapi.com/?i="+idormoviename+"&apikey="+apikey,
+                url: "https://www.omdbapi.com/?i="+idormoviename+"&apikey="+apikey,
                 
             })
             .done(function( data ) {
@@ -22,7 +22,7 @@ function searchMovie(){
             
         }else{
             $.ajax({
-                url: "http://www.omdbapi.com/?t="+idormoviename+"&apikey="+apikey,
+                url: "https://www.omdbapi.com/?t="+idormoviename+"&apikey="+apikey,
                 
             })
             .done(function( data ) {
@@ -59,7 +59,7 @@ if ( $( "#suggested" ).length ) {
     let randommovie = suggestedmovies[random]
 
     $.ajax({
-        url: "http://www.omdbapi.com/?t="+randommovie+"&apikey="+apikey,
+        url: "https://www.omdbapi.com/?t="+randommovie+"&apikey="+apikey,
         
     })
     .done(function( data ) {
